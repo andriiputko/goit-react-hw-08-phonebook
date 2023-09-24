@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from '../redux/auth/operations';
-import Home from '../pages/HomePage/Home';
 import Layout from './Layout/Layout';
 ;
 
@@ -23,7 +22,7 @@ export function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+         
           <Route
             path="register"
             element={
