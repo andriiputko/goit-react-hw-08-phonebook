@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { setFilterContacts  } from '../../redux/contacts/filterSlice';
-import cl from './Filter.module.css';
+// import cl from './Filter.module.css';
 import { Box } from '@chakra-ui/react';
 import { Input } from '@chakra-ui/react';
 import { Contacts } from 'components/Contacts/Contacts';

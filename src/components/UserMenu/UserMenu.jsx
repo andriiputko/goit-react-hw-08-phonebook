@@ -17,6 +17,8 @@ const UserMenu = () => {
         'linear(to bottom, #F8F8F8, #EDEDED)',
         'linear(to top, #EDEDED, #F8F8F8)',
       ]}
+      pb="30px"
+      pl="30px"
     >
       <Text textAlign={['left', 'center']} fontSize="2em">
         Welcome : {user.name}
@@ -26,7 +28,7 @@ const UserMenu = () => {
         type="button"
         onClick={() => dispatch(logOut())}
         rightIcon={<ArrowForwardIcon />}
-        colorScheme="teal"
+        colorScheme="orange"
         variant="outline"
       >
         LogOut

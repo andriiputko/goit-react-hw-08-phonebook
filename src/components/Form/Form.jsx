@@ -1,7 +1,6 @@
 import cl from './Form.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations.js';
-import { nanoid } from 'nanoid';
 import { selectContacts } from '../../redux/contacts/contactSelectors';
 import { toast } from 'react-toastify';
 import { Box } from '@chakra-ui/react';
@@ -48,7 +47,7 @@ export const ContactForm = () => {
       rounded="md"
     >
       <form onSubmit={handlerSubmit}>
-        <ul>
+        <ul className={cl.list}>
           <li>
             <p>Name</p>
 
@@ -79,7 +78,7 @@ export const ContactForm = () => {
           </li>
         </ul>
 
-        <Button type="submit" colorScheme="blue" mx="80px" mt={4}>
+        <Button type="submit" colorScheme="orange" mx="80px" mt={4}>
           Save
         </Button>
       </form>

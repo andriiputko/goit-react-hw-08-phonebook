@@ -77,7 +77,7 @@ export const LoginForm = () => {
           color="white"
           fontWeight="bold"
           borderRadius="md"
-          bgGradient="linear(to-r, teal.500, green.500)"
+          bgGradient="linear(to-r, yellow.500, purple.500)"
           w="300px"
           h="50px"
           _hover={{

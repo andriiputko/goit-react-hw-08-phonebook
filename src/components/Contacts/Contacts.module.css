@@ -1,4 +1,4 @@
-.list {
+/* .list {
     display: flex;
     gap: 50px;
     background-color: antiquewhite;
@@ -28,3 +28,7 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+.icon {
+    color: green;
+} */

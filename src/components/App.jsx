@@ -1,16 +1,13 @@
 import { useDispatch } from 'react-redux';
 import { lazy, useEffect } from 'react';
-import { ContactForm } from 'components/Form/Form';
-import { Contacts } from 'components/Contacts/Contacts';
-import { fetchContacts } from 'redux/contacts/operations';
-import { Filter } from 'components/Filter/Filter';
 import { Route, Routes } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { PrivateRoute } from './PrivateRoute';
+import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from '../redux/auth/operations';
 import Home from '../pages/HomePage/Home';
 import Layout from './Layout/Layout';
-import NotFoundPage from '../pages/NotFoundPage/notPagesFound';
+;
 
 const RegisterPage = lazy(() => import('../pages/RegisterPage/Register'));
 const LoginPage = lazy(() => import('../pages/LoginPage/Login'));
@@ -54,7 +51,7 @@ export function App() {
             }
           />
 
-          <Route path="*" element={<NotFoundPage />} />
+         
         </Route>
       </Routes>
     </>

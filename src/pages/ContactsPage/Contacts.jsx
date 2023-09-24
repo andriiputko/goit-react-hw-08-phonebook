@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react';
 import { fetchContacts } from '../../redux/contacts/operations';
 import { Filter } from 'components/Filter/Filter';
 import ContactForm from 'components/Form/Form';
+import cl from './ContactPage.module.css'
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -13,14 +14,14 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <Box
-      display="flex"
-      gridTemplateColumns="1fr 1fr"
-      mt={1}
+    <Box   
       bgGradient={[
         'linear(to bottom, #F8F8F8, #E8E8E8)',
         'linear(to top, #E8E8E8, #F8F8F8)',
       ]}
+      pb="120px"
+      pt="30px"
+      className={cl.container}
     >
       <ContactForm />
 

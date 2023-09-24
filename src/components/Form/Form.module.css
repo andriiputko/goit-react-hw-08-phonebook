@@ -1,4 +1,8 @@
-.form {
+.list {
+    list-style-type: none;
+}
+
+/* .form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,4 +51,4 @@
 .button:hover {
     background-color: rgb(173, 131, 67);
     cursor: pointer;
-}
+} */
